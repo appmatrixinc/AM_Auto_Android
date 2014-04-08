@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AM_Auto</string>
+    <string name="drawer_open">Open drawer</string>
+    <string name="drawer_close">Close drawer</string>
+    <string-array name="group_array">
+        <item>Messages</item>
+        <item>Likes</item>
+        <item>Games</item>
+    </string-array>
+    <array name="group_icon_array">
+        <item>@drawable/ic_action_email</item>
+        <item>@drawable/ic_action_good</item>
+        <item>@drawable/ic_action_gamepad</item>
+    </array>
+</resources>
