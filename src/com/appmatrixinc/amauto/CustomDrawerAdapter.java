@@ -6,8 +6,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseExpandableListAdapter;
 import android.widget.ImageView;
-import android.widget.TextView;
+import android.widget.LinearLayout;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
@@ -15,11 +16,10 @@ public class CustomDrawerAdapter extends BaseExpandableListAdapter {
 
     Context context;
     List<DrawerItem> drawerItemList;
-    HashMap<DrawerItem, List<String>> childItems;
+    HashMap<DrawerItem, ArrayList<ChildDrawerItem>> childItems;
     int layoutResID;
 
-    public CustomDrawerAdapter(Context context, int layoutResourceID, List<DrawerItem> listItems, HashMap<DrawerItem, List<String>> children) {
-        //super(context, layoutResourceID, listItems);
+    public CustomDrawerAdapter(Context context, int layoutResourceID, List<DrawerItem> listItems, HashMap<DrawerItem, ArrayList<ChildDrawerItem>> children) {
         this.context = context;
         this.drawerItemList = listItems;
         this.layoutResID = layoutResourceID;
@@ -37,19 +37,25 @@ public class CustomDrawerAdapter extends BaseExpandableListAdapter {
     }
 
     @Override
-    public View getChildView(int groupPosition, final int childPosition,
-                             boolean isLastChild, View convertView, ViewGroup parent) {
+    public View getChildView(int groupPosition, final int childPosition, boolean isLastChild, View convertView, ViewGroup parent) {
 
-        final String childText = (String) getChild(groupPosition, childPosition);
+        ChildDrawerItemHolder childItemHolder;
 
         if (convertView == null) {
-            LayoutInflater infalInflater = (LayoutInflater) this.context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            convertView = infalInflater.inflate(R.layout.child_drawer_item, null);
+            LayoutInflater inflater = (LayoutInflater) this.context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+            childItemHolder = new ChildDrawerItemHolder();
+
+            convertView = inflater.inflate(R.layout.child_drawer_item, parent, false);
+            childItemHolder.background = (ImageView) convertView.findViewById(R.id.child_drawer_background);
+            convertView.setTag(childItemHolder);
+        }
+        else {
+            childItemHolder = (ChildDrawerItemHolder) convertView.getTag();
         }
 
-        TextView txtListChild = (TextView) convertView.findViewById(R.id.drawer_childName);
+        ChildDrawerItem childItem = (ChildDrawerItem) getChild(groupPosition, childPosition);
+        childItemHolder.background.setBackgroundDrawable(convertView.getResources().getDrawable(childItem.getImgBackID()));
 
-        txtListChild.setText(childText);
         return convertView;
     }
 
@@ -75,37 +81,29 @@ public class CustomDrawerAdapter extends BaseExpandableListAdapter {
 
     @Override
     public View getGroupView(int groupPosition, boolean isExpanded, View convertView, ViewGroup parent) {
-        //String headerTitle = (String) getGroup(groupPosition);
+
         DrawerItemHolder drawerHolder;
         if (convertView == null) {
             LayoutInflater inflater = (LayoutInflater) this.context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             drawerHolder = new DrawerItemHolder();
 
-            //convertView = infalInflater.inflate(R.layout.custom_drawer_item, null);
             convertView = inflater.inflate(layoutResID, parent, false);
-            drawerHolder.ItemName = (TextView) convertView.findViewById(R.id.drawer_itemName);
-            drawerHolder.icon = (ImageView) convertView.findViewById(R.id.drawer_icon);
+            drawerHolder.background = (LinearLayout) convertView.findViewById(R.id.drawer_background);
             convertView.setTag(drawerHolder);
         }
         else {
             drawerHolder = (DrawerItemHolder) convertView.getTag();
-
         }
 
         DrawerItem dItem = (DrawerItem) this.drawerItemList.get(groupPosition);
-        drawerHolder.icon.setImageDrawable(convertView.getResources().getDrawable(dItem.getImgResID()));
-        drawerHolder.ItemName.setText(dItem.getItemName());
-
-        //TextView lblListHeader = (TextView) convertView.findViewById(R.id.drawer_itemName);
-        //lblListHeader.setTypeface(null, Typeface.BOLD);
-        //lblListHeader.setText(headerTitle);
+        drawerHolder.background.setBackgroundDrawable(convertView.getResources().getDrawable(dItem.getImgBackID()));
 
         return convertView;
     }
 
     @Override
     public boolean hasStableIds() {
-        return false;
+        return true;
     }
 
     @Override
@@ -113,42 +111,12 @@ public class CustomDrawerAdapter extends BaseExpandableListAdapter {
         return true;
     }
 
-    // OLD CODE from standard listview
-    /*
-    @Override
-    public View getView(int position, View convertView, ViewGroup parent) {
-         // TODO Auto-generated method stub
-
-        DrawerItemHolder drawerHolder;
-        View view = convertView;
-
-        if (view == null) {
-            LayoutInflater inflater = ((Activity) context).getLayoutInflater();
-            drawerHolder = new DrawerItemHolder();
-
-            view = inflater.inflate(layoutResID, parent, false);
-            drawerHolder.ItemName = (TextView) view.findViewById(R.id.drawer_itemName);
-            drawerHolder.icon = (ImageView) view.findViewById(R.id.drawer_icon);
-
-            view.setTag(drawerHolder);
-
-        } else {
-            drawerHolder = (DrawerItemHolder) view.getTag();
-
-        }
-
-        DrawerItem dItem = (DrawerItem) this.drawerItemList.get(position);
-
-        drawerHolder.icon.setImageDrawable(view.getResources().getDrawable(dItem.getImgResID()));
-        drawerHolder.ItemName.setText(dItem.getItemName());
-
-        return view;
-    }
-    */
-
     private static class DrawerItemHolder {
-        TextView ItemName;
-        ImageView icon;
+        LinearLayout background;
+    }
+
+    private static class ChildDrawerItemHolder {
+        ImageView background;
     }
 
 

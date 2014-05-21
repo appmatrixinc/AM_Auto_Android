@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="@drawable/header_bg1" android:id="@+id/menu_button">
+
+    <include layout="@layout/header" />
+
+    <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="210dp"
+            android:id="@+id/imageView2" android:layout_gravity="center_horizontal"
+            android:src="@drawable/dashboard_main_image"/>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="85dp" android:background="@drawable/dashboard_nav_bg" android:layout_marginTop="0dp">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="85dp"
+                      android:background="@android:color/transparent"
+                      android:id="@+id/linearLayout" android:layout_gravity="center" android:baselineAligned="false"
+                      android:gravity="center|center_vertical|center_horizontal">
+            <ImageButton
+                    android:layout_width="60dp"
+                    android:layout_height="55dp"
+                    android:id="@+id/contact_button" android:src="@drawable/icon_contact"
+                    android:background="@android:color/transparent" android:layout_gravity="center_vertical"
+                    android:scaleType="fitCenter" android:clickable="true"/>
+            <ImageButton
+                    android:layout_width="75dp"
+                    android:layout_height="80dp"
+                    android:id="@+id/inventory_button" android:src="@drawable/icon_inventory" android:scaleType="fitCenter"
+                    android:layout_gravity="center_vertical" android:background="@android:color/transparent"
+                    android:layout_marginLeft="22dp" android:clickable="true"/>
+            <ImageButton
+                    android:layout_width="60dp"
+                    android:layout_height="55dp"
+                    android:id="@+id/service_button" android:src="@drawable/icon_request_service"
+                    android:background="@android:color/transparent" android:layout_gravity="center_vertical"
+                    android:scaleType="fitCenter" android:layout_marginLeft="17dp" android:clickable="true"/>
+            <ImageButton
+                    android:layout_width="60dp"
+                    android:layout_height="55dp"
+                    android:id="@+id/mytools_button" android:src="@drawable/icon_my_tools"
+                    android:layout_gravity="center_vertical" android:background="@android:color/transparent"
+                    android:scaleType="fitCenter" android:layout_marginLeft="22dp" android:clickable="true"/>
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView
+            android:layout_width="195dp"
+            android:layout_height="115dp"
+            android:id="@+id/imageView3" android:layout_gravity="center_horizontal" android:layout_marginTop="10dp"
+            android:background="#000000" android:src="@drawable/play_video_ios" android:scaleType="fitXY"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Special Mobile Only Offers"
+            android:id="@+id/textView" android:layout_marginLeft="15dp"
+            android:textSize="13sp" android:layout_marginTop="15dp"/>
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:id="@+id/imageView4" android:layout_gravity="center_horizontal" android:layout_marginTop="3dp"
+            android:background="@drawable/banner_1"/>
+</LinearLayout>

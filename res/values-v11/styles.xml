@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="NoActionBar" parent="@android:style/Theme.Holo.Light">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:imageButtonStyle">@style/MarginlessImageButton</item>
+    </style>
+    <style name="MarginlessImageButton" parent="android:Widget.ImageButton">
+        <item name="android:background">@null</item>
+    </style>
+</resources>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" android:background="@drawable/header_bg1">
+
+    <include layout="@layout/header" />
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:id="@+id/imageView" android:layout_gravity="center_horizontal"
+            android:background="@drawable/header_register"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="First Name"
+            android:id="@+id/textView" android:paddingLeft="30dp" android:paddingTop="15dp"
+            android:textColor="#CCCCCC"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/first_name" android:layout_gravity="center_horizontal"
+            android:background="@drawable/textfield_name"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="80dp"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Last Name"
+            android:id="@+id/textView" android:paddingLeft="30dp" android:paddingTop="15dp"
+            android:textColor="#CCCCCC"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/last_name" android:layout_gravity="center_horizontal"
+            android:background="@drawable/textfield_name"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="80dp"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Your Email"
+            android:id="@+id/textView" android:paddingLeft="30dp" android:paddingTop="15dp"
+            android:textColor="#CCCCCC"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/email" android:layout_gravity="center_horizontal"
+            android:background="@drawable/textfield_email"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="80dp"/>
+    <Button
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:text="REGISTER"
+            android:id="@+id/register_firstPage" android:layout_gravity="center_horizontal" android:layout_marginTop="15dp"
+            android:background="@color/calendar_lightBlue" android:textSize="16sp" android:textColor="#FFFFFF"
+            />
+
+</LinearLayout>

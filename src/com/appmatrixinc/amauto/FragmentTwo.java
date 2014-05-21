@@ -1,5 +1,6 @@
 package com.appmatrixinc.amauto;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -12,6 +13,7 @@ public class FragmentTwo   extends Fragment {
 
     ImageView ivIcon;
     TextView tvItemName;
+    SharedPreferences sp;
 
     public static final String IMAGE_RESOURCE_ID = "iconResourceID";
     public static final String ITEM_NAME = "itemName";
@@ -29,10 +31,20 @@ public class FragmentTwo   extends Fragment {
 
         ivIcon=(ImageView)view.findViewById(R.id.frag2_icon);
         tvItemName=(TextView)view.findViewById(R.id.frag2_text);
+        sp = getActivity().getSharedPreferences("preferences", 0);
 
-        tvItemName.setText(getArguments().getString(ITEM_NAME));
-        ivIcon.setImageDrawable(view.getResources().getDrawable(
-                getArguments().getInt(IMAGE_RESOURCE_ID)));
+        String string = sp.getString("registered", null);
+        //tvItemName.setText("Registered");
+        if(string != null){
+            tvItemName.setText("Registered: " + string);
+        }
+        else{
+            tvItemName.setText("Registered: not working");
+        }
+
+
+        //tvItemName.setText(getArguments().getString(ITEM_NAME));
+        //ivIcon.setImageDrawable(view.getResources().getDrawable(getArguments().getInt(IMAGE_RESOURCE_ID)));
         return view;
     }
 

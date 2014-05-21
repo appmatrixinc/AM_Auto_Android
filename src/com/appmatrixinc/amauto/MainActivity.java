@@ -1,5 +1,6 @@
 package com.appmatrixinc.amauto;
 
+import android.content.Context;
 import android.content.res.Configuration;
 import android.content.res.TypedArray;
 import android.os.Bundle;
@@ -9,35 +10,38 @@ import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ExpandableListView;
-import android.widget.ListView;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
+// These are for newer android apk (14 and above) only - otherwise use v4 support library
 //import android.app.Fragment;
 //import android.app.FragmentManager;
 
 public class MainActivity extends FragmentActivity {
 
     private DrawerLayout mDrawerLayout;
-    //private ListView mDrawerList;
     ExpandableListView mDrawerList;
-    HashMap<DrawerItem, List<String>> childItems;
+    HashMap<DrawerItem, ArrayList<ChildDrawerItem>> childItems;
     private ActionBarDrawerToggle mDrawerToggle;
-    private CharSequence mTitle;
-    private CharSequence mDrawerTitle;
+    int numChildren;
 
     CustomDrawerAdapter adapter;
     List<DrawerItem> dataList;
 
     private String[] mGroupTitles;
-    private TypedArray mGroupIcons;
+    private TypedArray mGroupBackgrounds;
+    private TypedArray mDepartmentsBackgrounds;
+    private TypedArray mShowroomBackgrounds;
+    private TypedArray mMyToolsBackgrounds;
+    private TypedArray mConnectBackgrounds;
+
+    Context context;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -45,93 +49,121 @@ public class MainActivity extends FragmentActivity {
         setContentView(R.layout.main);
 
         dataList = new ArrayList<DrawerItem>();
-        childItems = new HashMap<DrawerItem, List<String>>();
-        mTitle = mDrawerTitle = getTitle();
+        childItems = new HashMap<DrawerItem, ArrayList<ChildDrawerItem>>();
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         mDrawerList = (ExpandableListView) findViewById(R.id.left_drawer);
         mDrawerLayout.setDrawerShadow(R.drawable.drawer_shadow, GravityCompat.START);
 
-        // From strings.xml to create group list
-        mGroupTitles = getResources().getStringArray(R.array.group_array);
-        mGroupIcons = getResources().obtainTypedArray(R.array.group_icon_array);
-
         // Remove group item open/close caret
         mDrawerList.setGroupIndicator(null);
 
+        // From strings.xml to create group list
+        mGroupTitles = getResources().getStringArray(R.array.group_array);
+        mGroupBackgrounds = getResources().obtainTypedArray(R.array.group_background_notRegistered_array);
+        mDepartmentsBackgrounds = getResources().obtainTypedArray(R.array.departments);
+        mShowroomBackgrounds = getResources().obtainTypedArray(R.array.showroom);
+        mMyToolsBackgrounds = getResources().obtainTypedArray(R.array.mytools);
+        mConnectBackgrounds = getResources().obtainTypedArray(R.array.connect);
+
+        // Create parent group rows
         for ( int i = 0; i < mGroupTitles.length; ++i ) {
-            String title = mGroupTitles[i];
-            int icon = mGroupIcons.getResourceId(i, -1);
-            dataList.add(new DrawerItem(title, icon));
+            int background = mGroupBackgrounds.getResourceId(i, -1);
+            dataList.add(new DrawerItem(background));
         }
 
-        //OLD CODE, workable but not as efficient
-        // Add Drawer Item to dataList
-        //dataList.add(new DrawerItem("Message", R.drawable.ic_action_email));
-        //dataList.add(new DrawerItem("Likes", R.drawable.ic_action_good));
-        //dataList.add(new DrawerItem("Games", R.drawable.ic_action_gamepad));
-        /*
-        dataList.add(new DrawerItem("Labels", R.drawable.ic_action_labels));
-        dataList.add(new DrawerItem("Search", R.drawable.ic_action_search));
-        dataList.add(new DrawerItem("Cloud", R.drawable.ic_action_cloud));
-        dataList.add(new DrawerItem("Camera", R.drawable.ic_action_camera));
-        dataList.add(new DrawerItem("Video", R.drawable.ic_action_video));
-        dataList.add(new DrawerItem("Groups", R.drawable.ic_action_group));
-        dataList.add(new DrawerItem("Import & Export", R.drawable.ic_action_import_export));
-        dataList.add(new DrawerItem("About", R.drawable.ic_action_about));
-        dataList.add(new DrawerItem("Settings", R.drawable.ic_action_settings));
-        dataList.add(new DrawerItem("Help", R.drawable.ic_action_help));
-        */
-
-
-        //  Children Arrays
+        //// Create child rows
+        //Departments
+        ArrayList<ChildDrawerItem> departments = new ArrayList<ChildDrawerItem>();
+        for ( int i = 0; i < 5; ++i ) {
+            int background = mDepartmentsBackgrounds.getResourceId(i, -1);
+            departments.add(new ChildDrawerItem(background));
+        }
+        //Showroom
+        ArrayList<ChildDrawerItem> showroom = new ArrayList<ChildDrawerItem>();
+        for ( int i = 0; i < 3; ++i ) {
+            int background = mShowroomBackgrounds.getResourceId(i, -1);
+            showroom.add(new ChildDrawerItem(background));
+        }
+        //MyTools
+        ArrayList<ChildDrawerItem> mytools = new ArrayList<ChildDrawerItem>();
+        for ( int i = 0; i < 6; ++i ) {
+            int background = mMyToolsBackgrounds.getResourceId(i, -1);
+            mytools.add(new ChildDrawerItem(background));
+        }
+        //ConnectShare
+        ArrayList<ChildDrawerItem> connect = new ArrayList<ChildDrawerItem>();
+        for ( int i = 0; i < 2; ++i ) {
+            int background = mConnectBackgrounds.getResourceId(i, -1);
+            connect.add(new ChildDrawerItem(background));
+        }
         // Empty array for group items that have no children
-        List<String> empty = new ArrayList<String>();
+        ArrayList<ChildDrawerItem> empty = new ArrayList<ChildDrawerItem>();
 
-        List<String> message = new ArrayList<String>();
-        message.add("message 1");
-        message.add("message 2");
-
-        List<String> cloud = new ArrayList<String>();
-        cloud.add("cloud 1");
-        cloud.add("cloud 2");
-        cloud.add("cloud 3");
-
-        childItems.put(dataList.get(0), message);
-        childItems.put(dataList.get(1), cloud);
-        childItems.put(dataList.get(2), empty);
+        //Add child arrays to parent items
+        childItems.put(dataList.get(0), empty);
+        childItems.put(dataList.get(1), empty);
+        childItems.put(dataList.get(2), departments);
+        childItems.put(dataList.get(3), showroom);
+        childItems.put(dataList.get(4), empty);
+        childItems.put(dataList.get(5), mytools);
+        childItems.put(dataList.get(6), empty);
+        childItems.put(dataList.get(7), connect);
+        childItems.put(dataList.get(8), empty);
 
         // Initialize and set adapter
         adapter = new CustomDrawerAdapter(this, R.layout.custom_drawer_item, dataList, childItems);
         mDrawerList.setAdapter(adapter);
 
         // Initialize onclicklistener for parent group items
-        mDrawerList.setOnItemClickListener(new DrawerItemClickListener());
+        mDrawerList.setOnGroupClickListener(new ExpandableListView.OnGroupClickListener() {
+            @Override
+            public boolean onGroupClick(ExpandableListView parent, View v, int groupPosition, long id) {
+
+                /// Check if row has children
+                numChildren = adapter.getChildrenCount(groupPosition);
+                Log.d("numChildren:", "num: " + numChildren);
+
+                //If parent has no children, change fragment
+                if(numChildren == 0){
+                    SelectItem(groupPosition);
+                    return true;
+                }
+                //Else expand listview to reveal children
+                else{
+                    return false;
+                }
+            }
+        });
 
         // Initialize onclicklistener for child items
         mDrawerList.setOnChildClickListener(new ExpandableListView.OnChildClickListener() {
             public boolean onChildClick(ExpandableListView parent, View view, int groupPosition, int childPosition, long id) {
-                String title = childItems.get(dataList.get(groupPosition)).get(childPosition);
-                Toast.makeText(
-                        getApplicationContext(),
-                        //dataList.get(groupPosition) + " : " + childItems.get(dataList.get(groupPosition)).get(childPosition),
-                        //childItems.get(dataList.get(groupPosition)).get(childPosition) + ": group: " + groupPosition + ", child: " + childPosition,
-                        title + ": " + childPosition,
-                        Toast.LENGTH_SHORT)
-                        .show();
 
                 // Call appropriate child click function depending on parent clicked
                 switch(groupPosition){
-                    case 0:
-                        SelectChildItem0(childPosition, title);
-                        break;
+
                     case 1:
-                        SelectChildItem1(childPosition, title);
+                        SelectChildItem_MyInfo(childPosition);
+                        break;
+                    case 2:
+                        SelectChildItem_Departments(childPosition);
+                        break;
+                    case 3:
+                        SelectChildItem_Showroom(childPosition);
+                        break;
+                    case 5:
+                        SelectChildItem_MyTools(childPosition);
+                        break;
+                    case 7:
+                        SelectChildItem_ConnectShare(childPosition);
+                        break;
                 }
 
                 return true;
             }
         });
 
+        ////These can get called only for higher sdks
         //getActionBar().setDisplayHomeAsUpEnabled(true);
         //getActionBar().setHomeButtonEnabled(true);
 
@@ -158,7 +190,7 @@ public class MainActivity extends FragmentActivity {
 
         // Sets default menu item selection
         if (savedInstanceState == null) {
-            SelectItem(0);
+            SelectItem(8);
         }
     }
 
@@ -171,85 +203,50 @@ public class MainActivity extends FragmentActivity {
         switch(position) {
             case 0:
                 fragment = new FragmentOne();
-                args.putString(FragmentOne.ITEM_NAME, dataList.get(position).getItemName());
-                args.putInt(FragmentOne.IMAGE_RESOURCE_ID, dataList.get(position).getImgResID());
+                args.putString(FragmentOne.ITEM_NAME, "Contact Us");
+                //args.putInt(FragmentOne.IMAGE_RESOURCE_ID, dataList.get(position).getImgResID());
                 break;
             case 1:
-                fragment = new FragmentTwo();
-                args.putString(FragmentTwo.ITEM_NAME, dataList.get(position).getItemName());
-                args.putInt(FragmentTwo.IMAGE_RESOURCE_ID, dataList.get(position).getImgResID());
+                fragment = new RegisterOne();
                 break;
             case 2:
-                fragment = new FragmentThree();
-                args.putString(FragmentThree.ITEM_NAME, dataList.get(position).getItemName());
-                args.putInt(FragmentThree.IMAGE_RESOURCE_ID, dataList.get(position).getImgResID());
                 break;
             case 3:
-                fragment = new FragmentOne();
-                args.putString(FragmentOne.ITEM_NAME, dataList.get(position).getItemName());
-                args.putInt(FragmentOne.IMAGE_RESOURCE_ID, dataList.get(position).getImgResID());
                 break;
             case 4:
                 fragment = new FragmentTwo();
-                args.putString(FragmentTwo.ITEM_NAME, dataList.get(position).getItemName());
-                args.putInt(FragmentTwo.IMAGE_RESOURCE_ID, dataList.get(position).getImgResID());
+                args.putString(FragmentTwo.ITEM_NAME, "Special Offers");
+                //args.putInt(FragmentTwo.IMAGE_RESOURCE_ID, dataList.get(position).getImgResID());
                 break;
             case 5:
-                fragment = new FragmentThree();
-                args.putString(FragmentThree.ITEM_NAME, dataList.get(position).getItemName());
-                args.putInt(FragmentThree.IMAGE_RESOURCE_ID, dataList.get(position).getImgResID());
                 break;
             case 6:
                 fragment = new FragmentOne();
-                args.putString(FragmentOne.ITEM_NAME, dataList.get(position).getItemName());
-                args.putInt(FragmentOne.IMAGE_RESOURCE_ID, dataList.get(position).getImgResID());
+                args.putString(FragmentOne.ITEM_NAME, "News");
+                //args.putInt(FragmentOne.IMAGE_RESOURCE_ID, dataList.get(position).getImgResID());
                 break;
             case 7:
-                fragment = new FragmentTwo();
-                args.putString(FragmentTwo.ITEM_NAME, dataList.get(position).getItemName());
-                args.putInt(FragmentTwo.IMAGE_RESOURCE_ID, dataList.get(position).getImgResID());
                 break;
             case 8:
-                fragment = new FragmentThree();
-                args.putString(FragmentThree.ITEM_NAME, dataList.get(position).getItemName());
-                args.putInt(FragmentThree.IMAGE_RESOURCE_ID, dataList.get(position).getImgResID());
-                break;
-            case 9:
-                fragment = new FragmentOne();
-                args.putString(FragmentOne.ITEM_NAME, dataList.get(position).getItemName());
-                args.putInt(FragmentOne.IMAGE_RESOURCE_ID, dataList.get(position).getImgResID());
-                break;
-            case 10:
-                fragment = new FragmentTwo();
-                args.putString(FragmentTwo.ITEM_NAME, dataList.get(position).getItemName());
-                args.putInt(FragmentTwo.IMAGE_RESOURCE_ID, dataList.get(position).getImgResID());
-                break;
-            case 11:
-                fragment = new FragmentThree();
-                args.putString(FragmentThree.ITEM_NAME, dataList.get(position).getItemName());
-                args.putInt(FragmentThree.IMAGE_RESOURCE_ID, dataList.get(position).getImgResID());
-                break;
-            case 12:
-                fragment = new FragmentOne();
-                args.putString(FragmentOne.ITEM_NAME, dataList.get(position).getItemName());
-                args.putInt(FragmentOne.IMAGE_RESOURCE_ID, dataList.get(position).getImgResID());
+                fragment = new Dashboard();
                 break;
             default:
                 break;
 
         }
 
-        fragment.setArguments(args);
+        //fragment.setArguments(args);
         FragmentManager frgManager = getSupportFragmentManager();
         frgManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
         mDrawerList.setItemChecked(position, true);
-        setTitle(dataList.get(position).getItemName());
+        //setTitle(dataList.get(position).getItemName());
         mDrawerLayout.closeDrawer(mDrawerList);
 
     }
 
-    // Method to select child item
-    public void SelectChildItem0(int position, String title) {
+    // Methods to select child items
+    //////////////////////////////
+    public void SelectChildItem_MyInfo(int position) {
 
         Fragment fragment = null;
         Bundle args = new Bundle();
@@ -257,13 +254,13 @@ public class MainActivity extends FragmentActivity {
         switch(position) {
             case 0:
                 fragment = new FragmentOne();
-                args.putString(FragmentOne.ITEM_NAME, title);
-                args.putInt(FragmentOne.IMAGE_RESOURCE_ID, R.drawable.ic_action_about);
+                //args.putString(FragmentOne.ITEM_NAME, title);
+                //args.putInt(FragmentOne.IMAGE_RESOURCE_ID, R.drawable.ic_action_about);
                 break;
             case 1:
                 fragment = new FragmentOne();
-                args.putString(FragmentTwo.ITEM_NAME, title);
-                args.putInt(FragmentTwo.IMAGE_RESOURCE_ID, R.drawable.ic_action_camera);
+                //args.putString(FragmentTwo.ITEM_NAME, title);
+                //args.putInt(FragmentTwo.IMAGE_RESOURCE_ID, R.drawable.ic_action_camera);
                 break;
         }
 
@@ -271,30 +268,41 @@ public class MainActivity extends FragmentActivity {
             FragmentManager frgManager = getSupportFragmentManager();
             frgManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
             mDrawerList.setItemChecked(position, true);
-            setTitle(dataList.get(position).getItemName());
+            //setTitle(dataList.get(position).getItemName());
             mDrawerLayout.closeDrawer(mDrawerList);
 
     }
-    public void SelectChildItem1(int position, String title) {
+
+    public void SelectChildItem_Departments(int position) {
 
         Fragment fragment = null;
         Bundle args = new Bundle();
 
         switch(position) {
             case 0:
-                fragment = new FragmentTwo();
-                args.putString(FragmentOne.ITEM_NAME, title);
-                args.putInt(FragmentOne.IMAGE_RESOURCE_ID, R.drawable.ic_action_about);
+                fragment = new Departments();
+                //args.putString(FragmentOne.ITEM_NAME, title);
+                //args.putInt(FragmentOne.IMAGE_RESOURCE_ID, R.drawable.ic_action_about);
                 break;
             case 1:
                 fragment = new FragmentOne();
-                args.putString(FragmentTwo.ITEM_NAME, title);
-                args.putInt(FragmentTwo.IMAGE_RESOURCE_ID, R.drawable.ic_action_camera);
+                //args.putString(FragmentTwo.ITEM_NAME, title);
+                //args.putInt(FragmentTwo.IMAGE_RESOURCE_ID, R.drawable.ic_action_camera);
                 break;
             case 2:
                 fragment = new FragmentTwo();
-                args.putString(FragmentTwo.ITEM_NAME, title);
-                args.putInt(FragmentTwo.IMAGE_RESOURCE_ID, R.drawable.ic_action_cloud);
+                //args.putString(FragmentTwo.ITEM_NAME, title);
+                //args.putInt(FragmentTwo.IMAGE_RESOURCE_ID, R.drawable.ic_action_cloud);
+                break;
+            case 3:
+                fragment = new FragmentOne();
+                //args.putString(FragmentTwo.ITEM_NAME, title);
+                //args.putInt(FragmentTwo.IMAGE_RESOURCE_ID, R.drawable.ic_action_camera);
+                break;
+            case 4:
+                fragment = new FragmentTwo();
+                //args.putString(FragmentTwo.ITEM_NAME, title);
+                //args.putInt(FragmentTwo.IMAGE_RESOURCE_ID, R.drawable.ic_action_cloud);
                 break;
         }
 
@@ -302,15 +310,122 @@ public class MainActivity extends FragmentActivity {
         FragmentManager frgManager = getSupportFragmentManager();
         frgManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
         mDrawerList.setItemChecked(position, true);
-        setTitle(dataList.get(position).getItemName());
+        //setTitle(dataList.get(position).getItemName());
         mDrawerLayout.closeDrawer(mDrawerList);
 
     }
 
-    // Sets the action bar title
+    public void SelectChildItem_Showroom(int position) {
+
+        Fragment fragment = null;
+        Bundle args = new Bundle();
+
+        switch(position) {
+            case 0:
+                fragment = new FragmentTwo();
+                //args.putString(FragmentOne.ITEM_NAME, title);
+                //args.putInt(FragmentOne.IMAGE_RESOURCE_ID, R.drawable.ic_action_about);
+                break;
+            case 1:
+                fragment = new FragmentOne();
+                //args.putString(FragmentTwo.ITEM_NAME, title);
+                //args.putInt(FragmentTwo.IMAGE_RESOURCE_ID, R.drawable.ic_action_camera);
+                break;
+            case 2:
+                fragment = new FragmentTwo();
+                //args.putString(FragmentTwo.ITEM_NAME, title);
+                //args.putInt(FragmentTwo.IMAGE_RESOURCE_ID, R.drawable.ic_action_cloud);
+                break;
+        }
+
+        fragment.setArguments(args);
+        FragmentManager frgManager = getSupportFragmentManager();
+        frgManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
+        mDrawerList.setItemChecked(position, true);
+        //setTitle(dataList.get(position).getItemName());
+        mDrawerLayout.closeDrawer(mDrawerList);
+
+    }
+
+    public void SelectChildItem_MyTools(int position) {
+
+        Fragment fragment = null;
+        Bundle args = new Bundle();
+
+        switch(position) {
+            case 0:
+                fragment = new FragmentTwo();
+                //args.putString(FragmentOne.ITEM_NAME, title);
+                //args.putInt(FragmentOne.IMAGE_RESOURCE_ID, R.drawable.ic_action_about);
+                break;
+            case 1:
+                fragment = new FragmentOne();
+                //args.putString(FragmentTwo.ITEM_NAME, title);
+                //args.putInt(FragmentTwo.IMAGE_RESOURCE_ID, R.drawable.ic_action_camera);
+                break;
+            case 2:
+                fragment = new FragmentTwo();
+                //args.putString(FragmentTwo.ITEM_NAME, title);
+                //args.putInt(FragmentTwo.IMAGE_RESOURCE_ID, R.drawable.ic_action_cloud);
+                break;
+            case 3:
+                fragment = new FragmentOne();
+                //args.putString(FragmentTwo.ITEM_NAME, title);
+                //args.putInt(FragmentTwo.IMAGE_RESOURCE_ID, R.drawable.ic_action_camera);
+                break;
+            case 4:
+                fragment = new FragmentTwo();
+                //args.putString(FragmentTwo.ITEM_NAME, title);
+                //args.putInt(FragmentTwo.IMAGE_RESOURCE_ID, R.drawable.ic_action_cloud);
+                break;
+            case 5:
+                fragment = new FragmentTwo();
+                //args.putString(FragmentTwo.ITEM_NAME, title);
+                //args.putInt(FragmentTwo.IMAGE_RESOURCE_ID, R.drawable.ic_action_cloud);
+                break;
+        }
+
+        fragment.setArguments(args);
+        FragmentManager frgManager = getSupportFragmentManager();
+        frgManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
+        mDrawerList.setItemChecked(position, true);
+        //setTitle(dataList.get(position).getItemName());
+        mDrawerLayout.closeDrawer(mDrawerList);
+
+    }
+
+    public void SelectChildItem_ConnectShare(int position) {
+
+        Fragment fragment = null;
+        Bundle args = new Bundle();
+
+        switch(position) {
+            case 0:
+                fragment = new FragmentTwo();
+                //args.putString(FragmentOne.ITEM_NAME, title);
+                //args.putInt(FragmentOne.IMAGE_RESOURCE_ID, R.drawable.ic_action_about);
+                break;
+            case 1:
+                fragment = new FragmentOne();
+                //args.putString(FragmentTwo.ITEM_NAME, title);
+                //args.putInt(FragmentTwo.IMAGE_RESOURCE_ID, R.drawable.ic_action_camera);
+                break;
+        }
+
+        fragment.setArguments(args);
+        FragmentManager frgManager = getSupportFragmentManager();
+        frgManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
+        mDrawerList.setItemChecked(position, true);
+        //setTitle(dataList.get(position).getItemName());
+        mDrawerLayout.closeDrawer(mDrawerList);
+
+    }
+
+
+    // Sets the action bar title - only for higher sdks
     @Override
     public void setTitle(CharSequence title) {
-        mTitle = title;
+        //mTitle = title;
         //getActionBar().setTitle(mTitle);
     }
 
@@ -337,14 +452,5 @@ public class MainActivity extends FragmentActivity {
     public void onConfigurationChanged(Configuration newConfig) {
         super.onConfigurationChanged(newConfig);
         mDrawerToggle.onConfigurationChanged(newConfig);
-    }
-
-    // Calls SelectItem function on group item click if no children
-    private class DrawerItemClickListener implements ListView.OnItemClickListener {
-        @Override
-        public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-            SelectItem(position);
-
-        }
     }
 }

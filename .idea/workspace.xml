@@ -9,9 +9,484 @@
     <shared>
       <config />
     </shared>
+    <layouts>
+      <layout url="file://$PROJECT_DIR$/res/layout-mdpi/calendar_view.xml">
+        <config>
+          <device>3.2in QVGA (ADP2)</device>
+          <theme>@style/NoActionBar</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/res/layout-mdpi/contact_us.xml">
+        <config>
+          <device>3.2in QVGA (ADP2)</device>
+          <theme>@style/NoActionBar</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/res/layout-mdpi/date_cell.xml">
+        <config>
+          <device>3.2in QVGA (ADP2)</device>
+          <theme>@style/NoActionBar</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/res/layout-mdpi/date_grid_fragment.xml">
+        <config>
+          <device>3.2in QVGA (ADP2)</device>
+          <theme>@style/NoActionBar</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/res/layout-mdpi/departments.xml">
+        <config>
+          <device>3.2in QVGA (ADP2)</device>
+          <theme>@style/NoActionBar</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/res/layout-mdpi/emergency_roadside.xml">
+        <config>
+          <device>3.2in QVGA (ADP2)</device>
+          <theme>@style/NoActionBar</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/res/layout-mdpi/flashlight.xml">
+        <config>
+          <device>3.2in QVGA (ADP2)</device>
+          <theme>@style/NoActionBar</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/res/layout-mdpi/header.xml">
+        <config>
+          <device>3.2in QVGA (ADP2)</device>
+          <theme>@style/NoActionBar</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/res/layout-mdpi/home.xml">
+        <config>
+          <device>3.2in QVGA (ADP2)</device>
+          <theme>@android:style/Theme.NoTitleBar</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/res/layout-mdpi/inventory.xml">
+        <config>
+          <device>3.2in QVGA (ADP2)</device>
+          <theme>@style/NoActionBar</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/res/layout-mdpi/my_tools.xml">
+        <config>
+          <device>3.2in QVGA (ADP2)</device>
+          <theme>@style/NoActionBar</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/res/layout-mdpi/register1.xml">
+        <config>
+          <device>3.2in QVGA (ADP2)</device>
+          <theme>@style/NoActionBar</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/res/layout-mdpi/register2.xml">
+        <config>
+          <device>3.2in QVGA (ADP2)</device>
+          <theme>@style/NoActionBar</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/res/layout-mdpi/request_service.xml">
+        <config>
+          <device>3.2in QVGA (ADP2)</device>
+          <theme>@style/NoActionBar</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/res/layout-mdpi/vehicle_tablerow.xml">
+        <config>
+          <device>3.2in QVGA (ADP2)</device>
+          <theme>@style/NoActionBar</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/res/layout-xhdpi/contact_us.xml">
+        <config>
+          <device>Nexus 4</device>
+          <theme>@style/NoActionBar</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/res/layout-xhdpi/departments.xml">
+        <config>
+          <device>Nexus 4</device>
+          <theme>@style/NoActionBar</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/res/layout-xhdpi/emergency_roadside.xml">
+        <config>
+          <device>Nexus 4</device>
+          <theme>@style/NoActionBar</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/res/layout-xhdpi/flashlight.xml">
+        <config>
+          <device>Nexus 4</device>
+          <theme>@style/NoActionBar</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/res/layout-xhdpi/home.xml">
+        <config>
+          <device>Nexus 4</device>
+          <theme>@android:style/Theme.Holo.NoActionBar</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/res/layout-xhdpi/main.xml">
+        <config>
+          <device>Nexus 4</device>
+          <theme>@style/NoActionBar</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/res/layout-xhdpi/my_tools.xml">
+        <config>
+          <device>Nexus 4</device>
+          <theme>@style/NoActionBar</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/res/layout-xhdpi/register1.xml">
+        <config>
+          <device>Nexus 4</device>
+          <theme>@style/NoActionBar</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/res/layout-xhdpi/register2.xml">
+        <config>
+          <device>Nexus 4</device>
+          <theme>@style/NoActionBar</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/res/layout-xhdpi/request_service.xml">
+        <config>
+          <device>Nexus 4</device>
+          <theme>@style/NoActionBar</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/res/layout-xhdpi/vehicle_tablerow.xml">
+        <config>
+          <device>Nexus 4</device>
+          <theme>@style/NoActionBar</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/res/layout-xxhdpi/calendar_view.xml">
+        <config>
+          <device>Nexus 5</device>
+          <theme>@style/NoActionBar</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/res/layout-xxhdpi/contact_us.xml">
+        <config>
+          <device>Nexus 5</device>
+          <theme>@android:style/Theme.Holo.NoActionBar</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/res/layout-xxhdpi/date_cell.xml">
+        <config>
+          <device>Nexus 5</device>
+          <theme>@style/NoActionBar</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/res/layout-xxhdpi/home.xml">
+        <config>
+          <device>Nexus 5</device>
+          <theme>@android:style/Theme.Holo.NoActionBar</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/res/layout-xxhdpi/inventory.xml">
+        <config>
+          <device>Nexus 4</device>
+          <theme>@style/NoActionBar</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/res/layout-xxhdpi/register1.xml">
+        <config>
+          <device>Nexus 5</device>
+          <theme>@style/NoActionBar</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/res/layout-xxhdpi/request_service.xml">
+        <config>
+          <device>Nexus 5</device>
+          <theme>@android:style/Theme.Holo.Light.NoActionBar</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/res/layout/calendar_view.xml">
+        <config>
+          <device>3.2in QVGA (ADP2)</device>
+          <theme>@style/NoActionBar</theme>
+        </config>
+      </layout>
+    </layouts>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b96bbbf4-f5e2-42ac-a606-22905c326165" name="Default" comment="" />
+    <list default="true" id="b96bbbf4-f5e2-42ac-a606-22905c326165" name="Default" comment="new files">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/android-async-http-1.4.4.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/caldroid/libs/android-support-v4.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/banner_1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/banner_title.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/bg_emergency_roadside.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/bg_flashlight.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/button_addvehicle.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/button_callnow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/button_choose_service.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/button_choose_vehicle.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/button_contact_service.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/button_email_custservice.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/button_emergency_call.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/button_empdir.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/button_findgas.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/button_findparking.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/button_flashlight.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/button_map_directions.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/button_map_directions2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/button_park_meter.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/button_roadside.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/button_schedule_test_drive.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/button_showroom.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/button_srvc_rqst.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/button_where_park.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/caldroid/res/drawable-hdpi/calendar_next_arrow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/calendar_next_arrow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/calendar_next_arrow_white.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/caldroid/res/drawable-hdpi/calendar_prev_arrow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/calendar_prev_arrow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/calendar_prev_arrow_white.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/cancel_delete.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/dashboard_main_image.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/dashboard_nav_bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/caldroid/libs/date4j.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/date4j.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/flashlight_off.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/flashlight_on.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/header_bg1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/header_emergency_roadside.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/header_finance.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/header_flashlight.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/header_icon_menu.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/header_logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/header_mytools.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/header_newcarsales.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/header_parts.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/header_register.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/header_register_vehicles.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/header_request_apt.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/header_service.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/header_settings.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/header_testdrive.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/header_usedcars.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/header_vehicles_inventory.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/caldroid/res/drawable-hdpi/ic_launcher.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/caldroid/res/drawable-mdpi/ic_launcher.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/caldroid/res/drawable-xhdpi/ic_launcher.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/icon_contact.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/icon_inventory.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/icon_my_tools.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/icon_request_service.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/menu_back_to_dashboard_1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/menu_back_to_dashboard_2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/menu_connect_share_1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/menu_connect_share_2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/menu_contact_us_1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/menu_contact_us_2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/menu_departments_1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/menu_departments_2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/menu_my_info_1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/menu_my_info_2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/menu_my_tools_1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/menu_my_tools_2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/menu_news_1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/menu_news_2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/menu_register_app_1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/menu_register_app_2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/menu_showroom_1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/menu_showroom_2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/menu_special_offers_1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/menu_special_offers_2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/play_video_ios.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/sample_inventory.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/sub_menu_emergency_roadside_1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/sub_menu_emergency_roadside_2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/sub_menu_finance_insurance_1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/sub_menu_finance_insurance_2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/sub_menu_find_gas_stations_1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/sub_menu_find_gas_stations_2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/sub_menu_find_local_parking_1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/sub_menu_find_local_parking_2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/sub_menu_flashlight_1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/sub_menu_flashlight_2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/sub_menu_my_account_info_1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/sub_menu_my_account_info_2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/sub_menu_my_vehicles_1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/sub_menu_my_vehicles_2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/sub_menu_new_cars_1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/sub_menu_new_cars_2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/sub_menu_parking_meter_1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/sub_menu_parking_meter_2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/sub_menu_parts_1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/sub_menu_parts_2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/sub_menu_refer_friend_1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/sub_menu_refer_friend_2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/sub_menu_schedule_test_drive_1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/sub_menu_schedule_test_drive_2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/sub_menu_service_1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/sub_menu_service_2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/sub_menu_service_manual_1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/sub_menu_service_manual_2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/sub_menu_share_photo_follow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/sub_menu_share_photo_follow2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/sub_menu_used_cars_1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/sub_menu_used_cars_2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/sub_menu_where_i_park_1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/sub_menu_where_i_park_2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/text_emergency_roadside.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/text_request_service.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/text_request_service_register.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/textfield_email.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/textfield_make_model.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/textfield_name.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/textfield_year.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/caldroid/AndroidManifest.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/caldroid/src/com/roomorama/caldroid/CaldroidFragment.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/roomorama/caldroid/CaldroidFragment.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/caldroid/src/com/roomorama/caldroid/CaldroidGridAdapter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/roomorama/caldroid/CaldroidGridAdapter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/caldroid/src/com/roomorama/caldroid/CaldroidListener.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/roomorama/caldroid/CaldroidListener.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/caldroid/src/com/roomorama/caldroid/CalendarHelper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/roomorama/caldroid/CalendarHelper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/appmatrixinc/amauto/ChildDrawerItem.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/appmatrixinc/amauto/ContactUs.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/appmatrixinc/amauto/Dashboard.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/appmatrixinc/amauto/DataBaseHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/caldroid/src/com/roomorama/caldroid/DateGridFragment.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/roomorama/caldroid/DateGridFragment.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/appmatrixinc/amauto/Departments.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/appmatrixinc/amauto/EmergencyRoadside.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/appmatrixinc/amauto/Flashlight.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/caldroid/src/com/antonyt/infiniteviewpager/InfinitePagerAdapter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/antonyt/infiniteviewpager/InfinitePagerAdapter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/caldroid/src/com/antonyt/infiniteviewpager/InfiniteViewPager.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/antonyt/infiniteviewpager/InfiniteViewPager.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/appmatrixinc/amauto/Inventory.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/appmatrixinc/amauto/MenuButton.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/caldroid/src/com/roomorama/caldroid/MonthPagerAdapter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/roomorama/caldroid/MonthPagerAdapter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/appmatrixinc/amauto/MyTools.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/appmatrixinc/amauto/RegisterOne.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/appmatrixinc/amauto/RegisterTwo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/appmatrixinc/amauto/RequestService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/caldroid/src/com/roomorama/caldroid/SquareTextView.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/roomorama/caldroid/SquareTextView.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/caldroid/src/com/roomorama/caldroid/WeekdayArrayAdapter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/roomorama/caldroid/WeekdayArrayAdapter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/android_async_http_1_4_4.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/android_support_v4__2_.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/android_support_v4__3_.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/blue_button.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/caldroid/caldroid.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/caldroid/res/layout/calendar_view.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/calendar_view.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout-mdpi/calendar_view.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout-xxhdpi/calendar_view.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/caldroid/res/drawable/cell_bg.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/cell_bg.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/caldroid/res/values/color.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/values/color.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout-hdpi/contact_us.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout-mdpi/contact_us.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout-xhdpi/contact_us.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout-xxhdpi/contact_us.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/date4j.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/date4j__2_.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/caldroid/res/layout/date_cell.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout-mdpi/date_cell.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout-xxhdpi/date_cell.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/caldroid/res/layout/date_grid_fragment.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout-mdpi/date_grid_fragment.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout-mdpi/departments.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout-xhdpi/departments.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/caldroid/res/drawable/disable_cell.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/disable_cell.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout-mdpi/emergency_roadside.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout-xhdpi/emergency_roadside.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout-mdpi/flashlight.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout-xhdpi/flashlight.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout-hdpi/header.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout-mdpi/header.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout-xhdpi/header.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout-xxhdpi/header.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout-hdpi/home.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout-mdpi/home.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout-xhdpi/home.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout-xxhdpi/home.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout-mdpi/inventory.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout-xxhdpi/inventory.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/caldroid/res/drawable/left_arrow.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/left_arrow.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout-xhdpi/main.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout-mdpi/my_tools.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout-xhdpi/my_tools.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/caldroid/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/caldroid/res/drawable/red_border.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/red_border.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/caldroid/res/drawable/red_border_gray_bg.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/red_border_gray_bg.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout-hdpi/register1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout-mdpi/register1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout-xhdpi/register1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout-xxhdpi/register1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout-mdpi/register2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout-xhdpi/register2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/register_two.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout-hdpi/request_service.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout-mdpi/request_service.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout-xhdpi/request_service.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout-xxhdpi/request_service.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/caldroid/res/drawable/right_arrow.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/right_arrow.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/anim/slide_in_left.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/anim/slide_out_right.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/caldroid/res/values/strings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/caldroid/res/values/styles.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/caldroid/res/values-v11/styles.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/caldroid/res/values-v14/styles.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/values/styles.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/values-v11/styles.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/test.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout-mdpi/vehicle_tablerow.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout-xhdpi/vehicle_tablerow.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/drawable-mdpi/ic_action_about.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/drawable-mdpi/ic_action_camera.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/drawable-mdpi/ic_action_cloud.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/drawable-mdpi/ic_action_email.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/drawable-mdpi/ic_action_gamepad.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/drawable-mdpi/ic_action_good.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/drawable-mdpi/ic_action_group.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/drawable-mdpi/ic_action_help.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/drawable-mdpi/ic_action_import_export.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/drawable-mdpi/ic_action_labels.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/drawable-mdpi/ic_action_search.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/drawable-mdpi/ic_action_settings.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/drawable-mdpi/ic_action_video.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AM_Auto.iml" afterPath="$PROJECT_DIR$/AM_Auto.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/appmatrixinc/amauto/CustomDrawerAdapter.java" afterPath="$PROJECT_DIR$/src/com/appmatrixinc/amauto/CustomDrawerAdapter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/appmatrixinc/amauto/DrawerItem.java" afterPath="$PROJECT_DIR$/src/com/appmatrixinc/amauto/DrawerItem.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/appmatrixinc/amauto/FragmentOne.java" afterPath="$PROJECT_DIR$/src/com/appmatrixinc/amauto/FragmentOne.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/appmatrixinc/amauto/FragmentThree.java" afterPath="$PROJECT_DIR$/src/com/appmatrixinc/amauto/FragmentThree.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/appmatrixinc/amauto/FragmentTwo.java" afterPath="$PROJECT_DIR$/src/com/appmatrixinc/amauto/FragmentTwo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/appmatrixinc/amauto/MainActivity.java" afterPath="$PROJECT_DIR$/src/com/appmatrixinc/amauto/MainActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/child_drawer_item.xml" afterPath="$PROJECT_DIR$/res/layout/child_drawer_item.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/custom_drawer_item.xml" afterPath="$PROJECT_DIR$/res/layout/custom_drawer_item.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/fragment_layout_one.xml" afterPath="$PROJECT_DIR$/res/layout/fragment_layout_one.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/fragment_layout_two.xml" afterPath="$PROJECT_DIR$/res/layout/fragment_layout_two.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/main.xml" afterPath="$PROJECT_DIR$/res/layout/main.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project.properties" afterPath="$PROJECT_DIR$/project.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/strings.xml" afterPath="$PROJECT_DIR$/res/values/strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="AM_Auto.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,6 +496,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="Commander">
+    <leftPanel />
+    <rightPanel />
+    <splitter proportion="0.5" />
+  </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
@@ -74,10 +554,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="strings.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
+      <file leaf-file-name="Departments.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/appmatrixinc/amauto/Departments.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="0" selection-start="548" selection-end="548" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
+            <state line="22" column="0" selection-start="512" selection-end="512" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/res/layout/test.xml">
+          <provider selected="true" editor-type-id="android-designer">
+            <state />
+          </provider>
+          <provider editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
               <folding />
             </state>
           </provider>
@@ -86,107 +580,34 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/appmatrixinc/amauto/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="313" column="42" selection-start="13315" selection-end="13315" vertical-scroll-proportion="0.0" vertical-offset="3653" max-vertical-offset="5340">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#3561#3569#0" expanded="true" />
-                <element signature="e#3618#3626#0" expanded="true" />
-                <element signature="e#3741#3749#0" expanded="true" />
-                <element signature="e#4406#5577#0" expanded="true" />
-                <element signature="e#5566#5567#0" expanded="true" />
-                <element signature="e#5836#5856#0" expanded="true" />
-                <element signature="e#5858#5879#0" expanded="true" />
-                <element signature="e#13247#13248#0" expanded="true" />
-              </folding>
+            <state line="282" column="44" selection-start="10807" selection-end="10807" vertical-scroll-proportion="0.0" vertical-offset="4230" max-vertical-offset="6930">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+      <file leaf-file-name="FragmentOne.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/appmatrixinc/amauto/FragmentOne.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="19" selection-start="673" selection-end="673" vertical-scroll-proportion="0.3427065" vertical-offset="0" max-vertical-offset="569">
-              <folding>
-                <element signature="e#297#315#0" expanded="true" />
-                <element signature="e#433#451#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="custom_drawer_item.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/layout/custom_drawer_item.xml">
-          <provider editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="855">
+            <state line="12" column="13" selection-start="344" selection-end="344" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="990">
               <folding />
             </state>
           </provider>
-          <provider selected="true" editor-type-id="android-designer">
-            <state />
-          </provider>
         </entry>
       </file>
-      <file leaf-file-name="fragment_layout_one.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/layout/fragment_layout_one.xml">
-          <provider editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
-              <folding />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="android-designer">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fragment_layout_two.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/layout/fragment_layout_two.xml">
-          <provider editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
-              <folding />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="android-designer">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fragment_layout_three.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/layout/fragment_layout_three.xml">
-          <provider editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
-              <folding />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="android-designer">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
+      <file leaf-file-name="FragmentTwo.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/appmatrixinc/amauto/FragmentTwo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="1" selection-start="629" selection-end="629" vertical-scroll-proportion="-9.444445" vertical-offset="0" max-vertical-offset="465">
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CustomDrawerAdapter.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/appmatrixinc/amauto/CustomDrawerAdapter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="13" selection-start="337" selection-end="337" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2280">
+            <state line="11" column="13" selection-start="314" selection-end="314" vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="840">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DrawerItem.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/appmatrixinc/amauto/DrawerItem.java">
+      <file leaf-file-name="FragmentThree.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/appmatrixinc/amauto/FragmentThree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="13" selection-start="47" selection-end="47" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
+            <state line="10" column="13" selection-start="272" selection-end="272" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="630">
               <folding />
             </state>
           </provider>
@@ -199,28 +620,73 @@
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/src/com/appmatrixinc/amauto/FragmentOne.java" />
-        <option value="$PROJECT_DIR$/src/com/appmatrixinc/amauto/FragmentTwo.java" />
-        <option value="$PROJECT_DIR$/src/com/appmatrixinc/amauto/FragmentThree.java" />
-        <option value="$PROJECT_DIR$/src/com/appmatrixinc/amauto/MainActivity.java" />
-        <option value="$PROJECT_DIR$/res/layout/child_drawer_item.xml" />
-        <option value="$PROJECT_DIR$/res/layout/custom_drawer_item.xml" />
-        <option value="$PROJECT_DIR$/res/layout/fragment_layout_one.xml" />
-        <option value="$PROJECT_DIR$/res/layout/fragment_layout_two.xml" />
-        <option value="$PROJECT_DIR$/res/layout/fragment_layout_three.xml" />
-        <option value="$PROJECT_DIR$/res/layout/main.xml" />
+        <option value="$PROJECT_DIR$/res/layout-hdpi/register2.xml" />
+        <option value="$PROJECT_DIR$/res/layout-mdpi/register1.xml" />
+        <option value="$PROJECT_DIR$/res/layout-hdpi/register1.xml" />
+        <option value="$PROJECT_DIR$/res/layout-xhdpi/register1.xml" />
+        <option value="$PROJECT_DIR$/res/layout-xxhdpi/register1.xml" />
+        <option value="$PROJECT_DIR$/src/com/appmatrixinc/amauto/RegisterOne.java" />
+        <option value="$PROJECT_DIR$/src/com/appmatrixinc/amauto/DatePicker.java" />
+        <option value="$PROJECT_DIR$/res/layout-mdpi/vehicle_tablerow.xml" />
+        <option value="$PROJECT_DIR$/res/layout-xhdpi/vehicle_tablerow.xml" />
+        <option value="$PROJECT_DIR$/src/com/appmatrixinc/amauto/DataBaseHandler.java" />
+        <option value="$PROJECT_DIR$/res/layout-mdpi/register2.xml" />
+        <option value="$PROJECT_DIR$/res/layout-xhdpi/register2.xml" />
+        <option value="$PROJECT_DIR$/src/com/appmatrixinc/amauto/RegisterTwo.java" />
+        <option value="$PROJECT_DIR$/res/layout-xxhdpi/request_service.xml" />
+        <option value="$PROJECT_DIR$/res/layout-xhdpi/request_service.xml" />
+        <option value="$PROJECT_DIR$/res/layout-hdpi/request_service.xml" />
+        <option value="$PROJECT_DIR$/res/layout-mdpi/request_service.xml" />
+        <option value="$USER_HOME$/Library/Caches/IdeaIC13/compile-server/am_auto_4593073/targets/java-production/AM_Auto/android/generated_sources/aapt/com/appmatrixinc/amauto/R.java" />
+        <option value="$PROJECT_DIR$/src/com/appmatrixinc/amauto/RequestService.java" />
+        <option value="$PROJECT_DIR$/res/drawable-mdpi/blue_button.xml" />
+        <option value="$PROJECT_DIR$/res/layout-mdpi/inventory.xml" />
+        <option value="$PROJECT_DIR$/res/layout-xxhdpi/inventory.xml" />
+        <option value="$PROJECT_DIR$/src/com/appmatrixinc/amauto/Inventory.java" />
+        <option value="$PROJECT_DIR$/res/values-v11/styles.xml" />
+        <option value="$PROJECT_DIR$/res/values/styles.xml" />
+        <option value="$PROJECT_DIR$/res/layout-hdpi/contact_us.xml" />
+        <option value="$PROJECT_DIR$/res/layout-mdpi/contact_us.xml" />
+        <option value="$PROJECT_DIR$/res/values-v14/styles.xml" />
+        <option value="$PROJECT_DIR$/res/layout-xxhdpi/contact_us.xml" />
+        <option value="$PROJECT_DIR$/res/layout-mdpi/my_tools.xml" />
+        <option value="$PROJECT_DIR$/res/layout-xhdpi/my_tools.xml" />
+        <option value="$PROJECT_DIR$/res/layout-mdpi/emergency_roadside.xml" />
+        <option value="$PROJECT_DIR$/res/layout-xhdpi/emergency_roadside.xml" />
+        <option value="$PROJECT_DIR$/src/com/appmatrixinc/amauto/EmergencyRoadside.java" />
+        <option value="$PROJECT_DIR$/res/layout-mdpi/flashlight.xml" />
+        <option value="$PROJECT_DIR$/res/layout-xhdpi/flashlight.xml" />
+        <option value="$PROJECT_DIR$/src/com/appmatrixinc/amauto/MyTools.java" />
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/src/com/appmatrixinc/amauto/Flashlight.java" />
+        <option value="$PROJECT_DIR$/res/layout-xhdpi/contact_us.xml" />
+        <option value="$PROJECT_DIR$/res/layout-xhdpi/main.xml" />
+        <option value="$PROJECT_DIR$/res/layout-mdpi/home.xml" />
+        <option value="$PROJECT_DIR$/res/layout-hdpi/home.xml" />
+        <option value="$PROJECT_DIR$/res/layout-xhdpi/home.xml" />
+        <option value="$PROJECT_DIR$/res/layout-xxhdpi/home.xml" />
+        <option value="$PROJECT_DIR$/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/res/layout-mdpi/departments.xml" />
+        <option value="$PROJECT_DIR$/res/layout-xhdpi/departments.xml" />
+        <option value="$PROJECT_DIR$/src/com/appmatrixinc/amauto/MainActivity.java" />
+        <option value="$PROJECT_DIR$/src/com/appmatrixinc/amauto/Departments.java" />
+        <option value="$PROJECT_DIR$/res/layout/test.xml" />
       </list>
     </option>
   </component>
+  <component name="MavenProjectNavigator">
+    <treeState />
+  </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="134" />
+    <option name="x" value="90" />
     <option name="y" value="22" />
-    <option name="width" value="1725" />
+    <option name="width" value="1794" />
     <option name="height" value="993" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -257,10 +723,6 @@
               <option name="myItemId" value="AM_Auto" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -286,6 +748,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AM_Auto" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AM_Auto" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="amauto" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -303,8 +787,22 @@
               <option name="myItemId" value="res" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="values" />
+              <option name="myItemId" value="AM_Auto" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AM_Auto" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout-mdpi" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -339,6 +837,10 @@
               <option name="myItemId" value="res" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drawable-mdpi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -352,25 +854,29 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.copyJavadoc" value="false" />
-    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Confirmation" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
     <property name="project.structure.last.edited" value="SDKs" />
-    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$USER_HOME$/android-sdk/extras/android/support/v4/android-support-v4.jar!/" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="661E0002FFFC0000" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="android_42" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/com/appmatrixinc/amauto" />
-      <recent name="$PROJECT_DIR$/res/layout" />
-      <recent name="$PROJECT_DIR$/res" />
-      <recent name="$PROJECT_DIR$/res/drawable-xhdpi" />
       <recent name="$PROJECT_DIR$/res/drawable-mdpi" />
+      <recent name="$PROJECT_DIR$/res/layout-mdpi" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/libs" />
+      <recent name="$PROJECT_DIR$/res/values" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/res/drawable-mdpi" />
+      <recent name="$PROJECT_DIR$/res/drawable-hdpi" />
+      <recent name="$PROJECT_DIR$/libs" />
     </key>
   </component>
   <component name="RunManager" selected="Android Application.AM_Auto">
@@ -408,19 +914,6 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -446,6 +939,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -503,11 +1009,11 @@
     </configuration>
     <configuration default="false" name="AM_Auto" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="AM_Auto" />
-      <option name="ACTIVITY_CLASS" value="com.appmatrixinc.amauto.MainActivity" />
-      <option name="MODE" value="specific_activity" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="MODE" value="default_activity" />
       <option name="DEPLOY" value="true" />
       <option name="ARTIFACT_NAME" value="" />
-      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
       <option name="USE_LAST_SELECTED_DEVICE" value="false" />
       <option name="PREFERRED_AVD" value="" />
       <option name="USE_COMMAND_LINE" value="true" />
@@ -518,8 +1024,6 @@
       <option name="NETWORK_LATENCY" value="none" />
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
-      <RunnerSettings RunnerId="AndroidDebugRunner" />
-      <ConfigurationWrapper RunnerId="AndroidDebugRunner" />
       <method />
     </configuration>
     <list size="1">
@@ -531,6 +1035,28 @@
     </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SliceManager">
+    <option name="analysisUIOptions">
+      <AnalysisUIOptions />
+    </option>
+  </component>
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="sslv3">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="b96bbbf4-f5e2-42ac-a606-22905c326165" name="Default" comment="" />
@@ -539,36 +1065,56 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="134" y="22" width="1725" height="993" extended-state="0" />
-    <editor active="true" />
+    <frame x="90" y="22" width="1794" height="993" extended-state="0" />
+    <editor active="false" />
     <layout>
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32985508" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32936078" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24973376" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32900432" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24985507" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22949947" sideWeight="0.50080776" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32779622" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32890365" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32890365" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24973376" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32945532" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.40894568" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24600457" sideWeight="0.49919224" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32741398" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32914287" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32852387" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -583,6 +1129,8 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
+    <MESSAGE value="new files" />
+    <option name="LAST_COMMIT_MESSAGE" value="new files" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -592,132 +1140,186 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/com/appmatrixinc/amauto/Departments.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="0" selection-start="512" selection-end="512" vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="420">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/appmatrixinc/amauto/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="282" column="44" selection-start="10807" selection-end="10807" vertical-scroll-proportion="0.0" vertical-offset="4230" max-vertical-offset="6930">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/appmatrixinc/amauto/FragmentOne.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="38" selection-start="98" selection-end="98" vertical-scroll-proportion="0.07601351" vertical-offset="0" max-vertical-offset="675">
+        <state line="12" column="13" selection-start="344" selection-end="344" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="990">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/appmatrixinc/amauto/FragmentTwo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="38" selection-start="98" selection-end="98" vertical-scroll-proportion="0.07601351" vertical-offset="0" max-vertical-offset="660">
+        <state line="11" column="13" selection-start="314" selection-end="314" vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="840">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/appmatrixinc/amauto/FragmentThree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="38" selection-start="98" selection-end="98" vertical-scroll-proportion="0.07601351" vertical-offset="0" max-vertical-offset="660">
+        <state line="10" column="13" selection-start="272" selection-end="272" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="630">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/appmatrixinc/amauto/Departments.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="0" selection-start="481" selection-end="481" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="420">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/appmatrixinc/amauto/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="313" column="42" selection-start="13315" selection-end="13315" vertical-scroll-proportion="0.0" vertical-offset="3653" max-vertical-offset="5340">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3561#3569#0" expanded="true" />
-            <element signature="e#3618#3626#0" expanded="true" />
-            <element signature="e#3741#3749#0" expanded="true" />
-            <element signature="e#4406#5577#0" expanded="true" />
-            <element signature="e#5566#5567#0" expanded="true" />
-            <element signature="e#5836#5856#0" expanded="true" />
-            <element signature="e#5858#5879#0" expanded="true" />
-            <element signature="e#13247#13248#0" expanded="true" />
-          </folding>
+        <state line="282" column="44" selection-start="10807" selection-end="10807" vertical-scroll-proportion="0.0" vertical-offset="4230" max-vertical-offset="6930">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/appmatrixinc/amauto/CustomDrawerAdapter.java">
+    <entry file="file://$PROJECT_DIR$/src/com/appmatrixinc/amauto/FragmentOne.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="13" selection-start="337" selection-end="337" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2280">
+        <state line="12" column="13" selection-start="344" selection-end="344" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="990">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/appmatrixinc/amauto/DrawerItem.java">
+    <entry file="file://$PROJECT_DIR$/src/com/appmatrixinc/amauto/FragmentTwo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="13" selection-start="47" selection-end="47" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
+        <state line="11" column="13" selection-start="314" selection-end="314" vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="840">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/child_drawer_item.xml">
+    <entry file="file://$PROJECT_DIR$/src/com/appmatrixinc/amauto/FragmentThree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="46" selection-start="1515" selection-end="1515" vertical-scroll-proportion="1.1623616" vertical-offset="0" max-vertical-offset="855">
+        <state line="10" column="13" selection-start="272" selection-end="272" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="630">
           <folding />
         </state>
       </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
+    <entry file="file://$PROJECT_DIR$/src/com/appmatrixinc/amauto/DataBaseHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="548" selection-end="548" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
-          <folding />
-        </state>
+        <state line="80" column="38" selection-start="2503" selection-end="2503" vertical-scroll-proportion="0.5052083" vertical-offset="804" max-vertical-offset="1380" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/custom_drawer_item.xml">
-      <provider editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="855">
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/fragment_layout_one.xml">
-      <provider editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/fragment_layout_two.xml">
-      <provider editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/fragment_layout_three.xml">
-      <provider editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
+    <entry file="file://$USER_HOME$/Library/Caches/IdeaIC13/compile-server/am_auto_4593073/targets/java-production/AM_Auto/android/generated_sources/aapt/com/appmatrixinc/amauto/R.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="1" selection-start="629" selection-end="629" vertical-scroll-proportion="-9.444445" vertical-offset="0" max-vertical-offset="465">
-          <folding />
-        </state>
+        <state line="247" column="48" selection-start="13957" selection-end="13957" vertical-scroll-proportion="0.5840555" vertical-offset="3293" max-vertical-offset="3870" />
       </provider>
-      <provider editor-type-id="android-designer">
-        <state />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/appmatrixinc/amauto/RequestService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="74" column="34" selection-start="3054" selection-end="3054" vertical-scroll-proportion="1.484375" vertical-offset="0" max-vertical-offset="1695" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/appmatrixinc/amauto/RegisterTwo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="75" column="63" selection-start="3287" selection-end="3334" vertical-scroll-proportion="0.6770833" vertical-offset="390" max-vertical-offset="1740" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/appmatrixinc/amauto/Inventory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="57" selection-start="705" selection-end="705" vertical-scroll-proportion="0.41666666" vertical-offset="0" max-vertical-offset="576" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/appmatrixinc/amauto/EmergencyRoadside.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="90" selection-start="1210" selection-end="1210" vertical-scroll-proportion="0.7323689" vertical-offset="75" max-vertical-offset="765" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/appmatrixinc/amauto/MyTools.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="0" selection-start="2318" selection-end="2318" vertical-scroll-proportion="0.0" vertical-offset="279" max-vertical-offset="855" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/appmatrixinc/amauto/Dashboard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="52" selection-start="1232" selection-end="1232" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1020" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/appmatrixinc/amauto/Flashlight.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="17" selection-start="1015" selection-end="1015" vertical-scroll-proportion="0.8072917" vertical-offset="0" max-vertical-offset="1155" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/appmatrixinc/amauto/RegisterOne.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="0" selection-start="2303" selection-end="2303" vertical-scroll-proportion="0.9739583" vertical-offset="54" max-vertical-offset="795" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="19" selection-start="673" selection-end="673" vertical-scroll-proportion="0.3427065" vertical-offset="0" max-vertical-offset="569">
+        <state line="7" column="57" selection-start="418" selection-end="418" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/appmatrixinc/amauto/ContactUs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="69" selection-start="2216" selection-end="2216" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="2115" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/appmatrixinc/amauto/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="282" column="44" selection-start="10807" selection-end="10807" vertical-scroll-proportion="0.0" vertical-offset="3726" max-vertical-offset="6600">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/appmatrixinc/amauto/FragmentOne.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="13" selection-start="344" selection-end="344" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="825">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/appmatrixinc/amauto/FragmentTwo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="13" selection-start="314" selection-end="314" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="735">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/appmatrixinc/amauto/FragmentThree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="13" selection-start="272" selection-end="272" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/appmatrixinc/amauto/Departments.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="0" selection-start="512" selection-end="512" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
           <folding>
-            <element signature="e#297#315#0" expanded="true" />
-            <element signature="e#433#451#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/test.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
+          <folding />
         </state>
       </provider>
     </entry>

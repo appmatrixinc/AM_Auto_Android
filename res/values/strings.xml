@@ -3,14 +3,78 @@
     <string name="app_name">AM_Auto</string>
     <string name="drawer_open">Open drawer</string>
     <string name="drawer_close">Close drawer</string>
+    <string name="phone_customer_service">5555555555</string>
+    <string name="email_customer_service">cs@amauto.com</string>
+    <string name="contact_service_advisor">5555555555</string>
+    <string name="emergency_call_now">5555555555</string>
+    <string name="hours_mon_fri">Mon - Friday 8am - 8pm</string>
+    <string name="hours_sat">Saturday 9am - 10pm</string>
+    <string name="hours_sun">Sunday 9am - 6pm</string>
     <string-array name="group_array">
-        <item>Messages</item>
-        <item>Likes</item>
-        <item>Games</item>
+        <item>Contact Us</item>
+        <item>Register</item>
+        <item>Departments</item>
+        <item>Showroom</item>
+        <item>Special Offers</item>
+        <item>My Tools</item>
+        <item>News</item>
+        <item>Connect &amp; Share</item>
+        <item>Back to Dashboard</item>
     </string-array>
-    <array name="group_icon_array">
-        <item>@drawable/ic_action_email</item>
-        <item>@drawable/ic_action_good</item>
-        <item>@drawable/ic_action_gamepad</item>
+    <array name="group_background_notRegistered_array">
+        <item>@drawable/menu_contact_us_1</item>
+        <item>@drawable/menu_register_app_1</item>
+        <item>@drawable/menu_departments_1</item>
+        <item>@drawable/menu_showroom_1</item>
+        <item>@drawable/menu_special_offers_1</item>
+        <item>@drawable/menu_my_tools_1</item>
+        <item>@drawable/menu_news_1</item>
+        <item>@drawable/menu_connect_share_1</item>
+        <item>@drawable/menu_back_to_dashboard_1</item>
     </array>
+    <array name="group_background_registered_array">
+        <item>@drawable/menu_contact_us_1</item>
+        <item>@drawable/menu_register_app_1</item>
+        <item>@drawable/menu_departments_1</item>
+        <item>@drawable/menu_showroom_1</item>
+        <item>@drawable/menu_special_offers_1</item>
+        <item>@drawable/menu_my_tools_1</item>
+        <item>@drawable/menu_news_1</item>
+        <item>@drawable/menu_connect_share_1</item>
+        <item>@drawable/menu_back_to_dashboard_1</item>
+    </array>
+    <array name="departments">
+        <item>@drawable/sub_menu_new_cars_1</item>
+        <item>@drawable/sub_menu_used_cars_1</item>
+        <item>@drawable/sub_menu_finance_insurance_1</item>
+        <item>@drawable/sub_menu_service_1</item>
+        <item>@drawable/sub_menu_parts_1</item>
+    </array>
+    <array name="showroom">
+        <item>@drawable/sub_menu_new_cars_1</item>
+        <item>@drawable/sub_menu_used_cars_1</item>
+        <item>@drawable/sub_menu_schedule_test_drive_1</item>
+    </array>
+    <array name="mytools">
+        <item>@drawable/sub_menu_emergency_roadside_1</item>
+        <item>@drawable/sub_menu_flashlight_1</item>
+        <item>@drawable/sub_menu_parking_meter_1</item>
+        <item>@drawable/sub_menu_where_i_park_1</item>
+        <item>@drawable/sub_menu_find_local_parking_1</item>
+        <item>@drawable/sub_menu_find_gas_stations_1</item>
+    </array>
+    <array name="connect">
+        <item>@drawable/sub_menu_share_photo_follow2</item>
+        <item>@drawable/sub_menu_refer_friend_1</item>
+    </array>
+    <array name="empty">
+    </array>
+    <string-array name="services_offered">
+        <item>What Service do you need?</item>
+        <item>Oil Change</item>
+        <item>Diagnostic</item>
+        <item>Tire Rotation</item>
+        <item>30K Mile Service</item>
+        <item>50K Mile Service</item>
+    </string-array>
 </resources>
