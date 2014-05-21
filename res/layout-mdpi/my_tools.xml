@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" android:background="@drawable/header_bg1">
+
+    <include layout="@layout/header" />
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:id="@+id/imageView" android:layout_gravity="center_horizontal"
+            android:src="@drawable/header_mytools" android:scaleType="fitXY"/>
+    <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/emergency_roadside" android:layout_gravity="center_horizontal"
+            android:src="@drawable/button_roadside" android:scaleType="fitXY"/>
+    <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/flashlight" android:layout_gravity="center_horizontal"
+            android:src="@drawable/button_flashlight" android:scaleType="fitXY" android:padding="0dp"
+            android:cropToPadding="false" android:adjustViewBounds="false"/>
+    <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/parking_meter" android:layout_gravity="center_horizontal"
+            android:src="@drawable/button_park_meter" android:scaleType="fitXY" android:padding="0dp"/>
+    <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/where_park" android:layout_gravity="center_horizontal" android:padding="0dp"
+            android:src="@drawable/button_where_park" android:scaleType="fitXY"/>
+    <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/find_parking" android:layout_gravity="center_horizontal"
+            android:src="@drawable/button_findparking" android:scaleType="fitXY" android:padding="0dp"/>
+    <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/find_gas" android:layout_gravity="center_horizontal"
+            android:src="@drawable/button_findgas" android:scaleType="fitXY" android:padding="0dp"/>
+
+</LinearLayout>

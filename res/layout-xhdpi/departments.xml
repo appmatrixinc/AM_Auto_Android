@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" android:background="@drawable/bg_emergency_roadside">
+
+    <include layout="@layout/header" />
+    <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:id="@+id/dept_image" android:layout_gravity="center_horizontal"
+            android:src="@drawable/header_newcarsales"/>
+    <ImageButton
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:id="@+id/dept_showroom" android:layout_gravity="center_horizontal"
+            android:src="@drawable/button_showroom" android:scaleType="fitXY"/>
+    <ImageButton
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:id="@+id/dept_test_drive" android:layout_gravity="center_horizontal"
+            android:src="@drawable/button_schedule_test_drive" android:scaleType="fitXY"/>
+    <ImageButton
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:id="@+id/dept_call" android:layout_gravity="center_horizontal"
+            android:src="@drawable/button_callnow" android:scaleType="fitXY"/>
+    <ImageButton
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:id="@+id/dept_email" android:layout_gravity="center_horizontal" android:scaleType="fitXY"
+            android:src="@drawable/button_email_custservice"/>
+    <ImageButton
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:id="@+id/dept_empldir" android:layout_gravity="center_horizontal"
+            android:src="@drawable/button_empdir" android:scaleType="fitXY"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="HOURS OF OPERATION"
+            android:id="@+id/textView" android:layout_gravity="center_horizontal" android:textColor="#FFFFFF"
+            android:textSize="12sp" android:layout_marginTop="20dp"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/hours_mon_fri" android:layout_gravity="center_horizontal" android:textColor="#FFFFFF"
+            android:text="@string/hours_mon_fri" android:layout_marginTop="10dp" android:textSize="16sp"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/hours_sat"
+            android:id="@+id/hours_sat" android:layout_gravity="center_horizontal" android:textColor="#FFFFFF"
+            android:textSize="16sp" android:layout_marginTop="10dp"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/hours_sun"
+            android:id="@+id/hours_sun" android:layout_gravity="center_horizontal" android:textColor="#FFFFFF"
+            android:textSize="16sp" android:layout_marginTop="10dp"/>
+
+</LinearLayout>

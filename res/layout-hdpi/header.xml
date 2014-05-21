@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:id="@+id/header"
+              android:layout_height="50dp">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp" android:background="@drawable/header_bg1">
+        <ImageView
+                android:layout_width="175dp"
+                android:layout_height="match_parent"
+                android:id="@+id/imageView" android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" android:src="@drawable/header_logo"/>
+        <ImageButton
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:id="@+id/menu_button" android:layout_alignParentTop="false"
+                android:layout_alignParentLeft="false" android:layout_alignWithParentIfMissing="true"
+                android:layout_centerVertical="true" android:src="@drawable/header_icon_menu"
+                android:background="@android:color/transparent" android:layout_marginLeft="20dp"
+                android:scaleType="fitCenter"/>
+    </RelativeLayout>
+
+</LinearLayout>

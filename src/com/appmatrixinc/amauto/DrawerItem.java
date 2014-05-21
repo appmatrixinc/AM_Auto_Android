@@ -2,25 +2,17 @@ package com.appmatrixinc.amauto;
 
 public class DrawerItem {
 
-    String ItemName;
-    int imgResID;
+    int imgBackID;
 
-    public DrawerItem(String itemName, int imgResID) {
+    public DrawerItem(int imgBackID) {
         super();
-        ItemName = itemName;
-        this.imgResID = imgResID;
+        this.imgBackID = imgBackID;
     }
 
-    public String getItemName() {
-        return ItemName;
+    public int getImgBackID() {
+        return imgBackID;
     }
-    public void setItemName(String itemName) {
-        ItemName = itemName;
-    }
-    public int getImgResID() {
-        return imgResID;
-    }
-    public void setImgResID(int imgResID) {
-        this.imgResID = imgResID;
+    public void setImgBackID(int imgResID) {
+        this.imgBackID = imgBackID;
     }
 }

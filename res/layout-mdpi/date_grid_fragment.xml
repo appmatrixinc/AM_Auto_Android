@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/calendar_gridview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:adjustViewBounds="true"
+    android:background="@color/calendar_lightBlue"
+    android:gravity="center_horizontal"
+    android:horizontalSpacing="1dp"
+    android:numColumns="7"
+    android:paddingLeft="2dp"
+    android:stretchMode="columnWidth"
+    android:verticalSpacing="1dp"
+    android:paddingTop="1dp"
+    android:paddingRight="1dp"
+    android:paddingBottom="1dp" android:choiceMode="singleChoice" android:clickable="false"
+    android:drawSelectorOnTop="false" android:listSelector="@color/caldroid_darker_gray" android:focusable="false"/>

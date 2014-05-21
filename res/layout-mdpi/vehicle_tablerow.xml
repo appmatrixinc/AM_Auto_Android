@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+          android:layout_width="match_parent"
+          android:layout_height="60dp"
+          android:background="#CC000000"
+          android:baselineAligned="false" android:clickable="false"
+          android:id="@+id/vehicle_tablerow">
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:orientation="vertical" android:layout_gravity="center"
+            android:gravity="fill" android:clickable="true">
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp" android:layout_gravity="center_vertical"
+                android:gravity="center_vertical">
+            <TextView
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="2014 Acura TL"
+                    android:id="@+id/vehicle_description" android:textColor="#FFFFFF" android:textSize="16dp"
+                    android:longClickable="true" android:layout_marginLeft="15dp"
+                    android:layout_centerVertical="true"/>
+            <ImageButton
+                    android:layout_width="30dp"
+                    android:layout_height="28dp"
+                    android:id="@+id/delete_vehicle" android:layout_gravity="center_vertical|right"
+                    android:background="@drawable/cancel_delete"
+                    android:layout_centerVertical="true" android:layout_marginRight="15dp"
+                    android:layout_alignParentRight="true" android:layout_alignRight="@+id/vehicle_description"
+                    android:clickable="true"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</TableRow>
