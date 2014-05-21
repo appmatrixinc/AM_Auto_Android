@@ -9,3 +9,5 @@
 AM_Auto.iml
 
 caldroid/gen/com/caldroid/R.java
+
+out/production/AM_Auto/AM_Auto.apk
